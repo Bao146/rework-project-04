@@ -99,11 +99,12 @@ a {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: red;
+    background: #00a7cc;
     margin: 0 20px 20px;
     position: fixed;
     bottom: 0;
     right: 0;
+    color: #fff;
 }
 
 .up-top__icon {
@@ -752,6 +753,10 @@ a {
     margin: 0 16px;
 }
 
+.staff-item__img-wrap:hover {
+    transform: scale(1.1);
+}
+
 .staff-item__img-wrap::before {
     content: "";
     position: absolute;
@@ -1009,4 +1014,353 @@ a {
 
 .pricing-item:last-child .pricing-item__item::before {
     content: url(../img/pricing-check.svg);
+}
+
+/* Review */
+.review {
+    margin-top: 53px;
+    padding: 50px 0;
+}
+
+.review__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 44px;
+}
+
+.review__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 1.5px solid #ffd1c4;
+    background: transparent;
+    color: #ff5b2e;
+}
+
+.review__control:hover {
+    cursor: pointer;
+    background: #ff5b2e;
+    color: #fff;
+}
+
+.review__content {
+    overflow: hidden;
+}
+
+.review__list {
+    display: flex;
+}
+
+.review-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    column-gap: 115px;
+}
+
+.review-item__media {
+    margin-top: -53px;
+    position: relative;
+    width: 274px;
+    border-radius: 137px;
+    flex-shrink: 0;
+}
+
+.review-item__media::after {
+    content: "";
+    position: absolute;
+    background: #ffda54;
+    border-radius: inherit;
+    width: 100%;
+    height: 80%;
+    left: 0;
+    bottom: 0;
+}
+
+.review-item__img {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    border-radius: inherit;
+}
+
+.review-item__quote {
+    width: 553px;
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: #000000;
+}
+
+.review-item__author {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin-top: 34px;
+    font-family: Sora, sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #282828;
+}
+
+.review-item__author::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    border-radius: 10px;
+    background: #000000;
+}
+
+.review__dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    margin-top: 56px;
+}
+
+.review__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    border: 1px solid #ff5b2e;
+}
+
+.review__dot:hover {
+    cursor: pointer;
+    background: #ff5b2e;
+}
+
+.review__dot--active {
+    width: 24px;
+    background: #ff5b2e;
+    pointer-events: none;
+}
+
+/* Blog */
+.blog {
+    margin-top: 80px;
+    padding: 50px 0;
+}
+
+.blog__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__info {
+    margin-right: 73px;
+}
+
+.blog__desc {
+    width: 350px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #656689;
+}
+
+.blog__btn {
+    min-width: 182px;
+    margin-top: 24px;
+    font-weight: 500;
+    background: transparent;
+    border: 1px solid #ff5b2e99;
+    color: var(--primary-color);
+}
+
+.blog__list {
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 48px;
+}
+
+.blog-item__img-wrap {
+    padding: 24px 0 0 36px;
+    background: #90ccff;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.blog-item:nth-child(2) .blog-item__img-wrap {
+    background: #ff997e;
+}
+
+.blog-item:nth-child(3) .blog-item__img-wrap {
+    background: #5bd6e2;
+}
+
+.blog-item__time {
+    font-family: Sora, sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.21;
+    color: #ffffff;
+}
+
+.blog-item__img {
+    margin-top: 25px;
+    display: block;
+    width: 322px;
+    height: 296px;
+    object-fit: cover;
+}
+
+.blog-item__img:hover {
+    transform: scale(1.1);
+}
+
+.blog-item__info {
+    padding: 28px 16px 0 0;
+}
+
+.blog-item__heading {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1.55;
+    color: #000958;
+}
+
+.blog-item__desc {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    color: #656689;
+}
+
+/* Footer */
+.footer {
+    margin-top: 80px;
+    background: linear-gradient(to right, #fff6ed 43%, transparent 42%);
+}
+
+.footer__inner {
+    display: flex;
+}
+
+.footer__left {
+    padding: 114px 0 148px;
+    width: 41%;
+}
+
+.subscribe-form {
+    margin: 35px 0 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 268px;
+    height: 46px;
+    background: #fff;
+    border: 1px solid rgba(255, 91, 46, 0.25);
+    border-radius: 99px;
+}
+
+.subscribe-form__input {
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+    font-size: 1.4rem;
+}
+
+.subscribe-form__input::placeholder {
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.17;
+    color: #656689;
+    opacity: 0.8;
+}
+
+.subscribe-form__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: -1px;
+    color: #fff;
+    background: #ff5b2e;
+    box-shadow: 0px 15px 28px -7px rgba(255, 91, 46, 0.3);
+    border: 1px solid #ff5b2e;
+}
+
+.subscribe-form__submit:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.footer__heading {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.11;
+    color: #000958;
+}
+
+.social__list {
+    margin-top: 16px;
+    column-gap: 16px;
+    display: flex;
+}
+
+.social__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.social__item:hover {
+    background: #00a7cc;
+}
+
+.footer__row {
+    padding: 52px 0 52px 129px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 58px 137px;
+}
+
+.footer__list {
+    margin-top: 14px;
+}
+
+.footer__link {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2;
+    color: #656689;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.copy-right {
+    margin-left: 22px;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.4rem;
+    line-height: 1.17;
+    color: #656689;
+    opacity: 0.5;
 }
